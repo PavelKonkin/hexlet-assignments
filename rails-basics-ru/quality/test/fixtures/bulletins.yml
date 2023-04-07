@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+bulletin_one:
+  title: 'Title one'
+  body: 'Content of bulletin one'
+  published: false
+
+bulletin_two:
+  title: 'Title two'
+  body: 'Content of bulletin two'
+  published: false
