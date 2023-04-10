@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+task_one:
+  name: MyString1
+  description: MyText1
+  status: MyString1
+  creator: MyString1
+  performer: MyString1
+  completed: false
+
+task_two:
+  name: MyString2
+  description: MyText2
+  status: MyString2
+  creator: MyString2
+  performer: MyString2
+  completed: false
