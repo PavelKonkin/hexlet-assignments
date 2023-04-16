@@ -1,0 +1,12 @@
+h1 
+  | Posts list
+- @posts.each do |post|
+  = link_to post.title, post
+  br
+  = post.summary
+  hr
+h2  
+= link_to 'New post', new_post_path
+br
+h2
+= link_to 'Back', root_path

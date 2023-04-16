@@ -1,0 +1,13 @@
+h1
+  | Post № 
+  = @post.id
+h3
+  = @post.title
+h4
+  = @post.body
+br
+= link_to 'Edit post', edit_post_path(@post)
+br
+= link_to 'Delete this post', @post, method: :delete, data: {confirm: 'Are you sure?'}  
+br
+= link_to 'Posts list', posts_path
