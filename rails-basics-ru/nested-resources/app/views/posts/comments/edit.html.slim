@@ -1,0 +1,8 @@
+h1 Editing comment
+
+== render "form", post_comment: @post_comment
+
+br
+
+div
+  =< link_to "Back to post", post_path(@post_comment.post_id)

@@ -1,0 +1,27 @@
+- content_for :title do
+  = @post.title
+p
+  strong.me-2 Body:
+  = @post.body
+/ BEGIN
+p style="color: green" = notice
+
+h4 Comments
+
+#post_comments
+  - @post.post_comments.each do |comment|
+    = comment.body
+    br
+    = link_to "Edit this comment", edit_post_comment_path(@post, comment)
+    br
+    = link_to "Delete this comment", post_comment_path(@post, comment), method: :delete, data: { confirm: 'Are you sure?' }
+    hr
+ 
+
+= link_to "New comment", new_post_comment_path(@post)
+/ END
+hr
+
+.d-flex
+  = link_to 'Edit', edit_post_path(@post), class: 'btn btn-outline-primary me-2'
+  = link_to 'Back', :back, class: 'btn btn-outline-primary'
