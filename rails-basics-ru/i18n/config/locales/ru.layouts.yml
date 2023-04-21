@@ -1,0 +1,8 @@
+ru:
+  layouts:
+    application:
+      title: Домашняя страница
+      hexlet_title: © Хекслет, %{year}
+    shared:
+      nav:
+        hexlet_logo: Хекслет лого
