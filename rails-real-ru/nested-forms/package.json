@@ -2,7 +2,6 @@
   "name": "nested-forms",
   "private": true,
   "dependencies": {
-    "@hotwired/stimulus": "^3.2.1",
     "@nathanvda/cocoon": "^1.2.14",
     "@popperjs/core": "^2.11.7",
     "@rails/actioncable": "^7.0.0",
