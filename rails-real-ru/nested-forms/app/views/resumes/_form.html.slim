@@ -13,7 +13,7 @@
   #education
     / BEGIN
     = f.simple_fields_for :educations do |education|
-      = render 'education_fields', f: work
+      = render 'education_fields', f: education
     .links.my-1
       = link_to_add_association 'Add education item', f, :educations
     / END
