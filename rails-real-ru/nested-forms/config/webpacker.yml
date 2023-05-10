@@ -1,0 +1,18 @@
+# config/webpacker.yml
+
+default: &default
+  # ... other configuration options ...
+  externals:
+    - "@hotwired/turbo-rails"
+
+development:
+  <<: *default
+  # ... development-specific configuration ...
+
+test:
+  <<: *default
+  # ... test-specific configuration ...
+
+production:
+  <<: *default
+  # ... production-specific configuration ...
