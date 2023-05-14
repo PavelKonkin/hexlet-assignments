@@ -1,0 +1,4 @@
+h1 =t('.congratulation', user_name: @user_name)
+p =t('.welcome_text')
+= link_to t('.confirm'), confirm_user_url(confirmation_token: @confirmation_token)
+
