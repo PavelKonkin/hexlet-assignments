@@ -12,7 +12,7 @@ class Web::ArticlesController < Web::ApplicationController
   # BEGIN
   def show
     @article = Article.find(params[:id])
-    Rails.cache.write('date_of_reading', Date.now, expires_in: 12.hours)
+    Rails.cache.write('date_of_reading', DateTime.now, expires_in: 12.hours)
   end
   # END
 end
